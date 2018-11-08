@@ -1,3 +1,16 @@
+# Solution
+
+`.env` file you need to add:
+
+```
+PORT=3000
+ENV=development
+BASE_URL=http://localhost:3000/
+GMAIL_USER=charlottetreuse42@gmail.com
+GMAIL_PASS=askYourTeacher
+```
+
+
 ![Ironhack logo](https://i.imgur.com/1QgrNNw.png)
 
 # PP | Sign up Confirmation Email
@@ -61,7 +74,7 @@ On the `auth/signup.hbs` file you need to add an `input` tag for the **email**. 
 - **username**. From the `req.body`.
 - **password**. After hashing the value of the `password` field from the `req.body`.
 - **email**. From the `req.body`.
-- **confirmationCode**. For creating a confirmation code, we will **hash** the `username` value, the same way we do with `password` field. After hashing the value, we store it on the `confirmationCode` value.
+- **confirmationCode**. For creating a confirmation code, we will generate a random string with 30 characters.
 
 ![image](https://user-images.githubusercontent.com/23629340/37097022-bcd833f2-221a-11e8-9dbc-f7eeb950b79d.png)
 
